@@ -17,6 +17,10 @@ buildscript {
             name 'forge'
             url 'http://files.minecraftforge.net/maven'
         }
+        maven {
+            name 'kca'
+            url 'https://sourceforge.net/projects/kcauldron/files/'
+        }
     }
     dependencies {
         classpath 'net.minecraftforge.gradle:ForgeGradle:1.2.0.777'
