@@ -40,9 +40,6 @@ jobs:
 
     # Runs a set of commands using the runners shell
     - name: gradle2
-      run:   ./gradlew setupCauldron
-    # Runs a set of commands using the runners shell
-    - name: gradle3
       run:   ./gradlew jar
         echo Add other actions to build,
         echo test, and deploy your project.
