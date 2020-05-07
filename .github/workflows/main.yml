@@ -35,11 +35,14 @@ jobs:
       run: git clone https://github.com/GuGuYeah/Uranium.git
 
     # Runs a set of commands using the runners shell
-    - name: find
-      run:  which Uranium
+    - name: gradle
+      run:  git submodule update --init --recursive
 
     # Runs a set of commands using the runners shell
-    - name: build
-      run:   ls
+    - name: gradle2
+      run:   ./gradlew setupCauldron
+    # Runs a set of commands using the runners shell
+    - name: gradle3
+      run:   ./gradlew jar
         echo Add other actions to build,
         echo test, and deploy your project.
